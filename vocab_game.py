@@ -107,7 +107,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4:สีเหลือง yellow `มะม่วง m _ _ _o`. 🥭 ",
+    "ข้อ 4: สีเหลือง yellow มะม่วง ' m _ _ _o`. 🥭 ",
     value=st.session_state.ans4_val,
 )
 
