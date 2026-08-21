@@ -50,18 +50,18 @@ def show_result_dialog(ans1, ans2):
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
           # ตรวจข้อ 3
-    if u_ans1 == "apple":
+    if u_ans3 == "banana":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
+        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans2 == "fish":
+    if u_ans4 == "mango":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 4 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        st.error(f"❌ ข้อ 4 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
 
     # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มตรวจข้อ 3, 4 ตรงนี้
 
@@ -100,7 +100,7 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: An `monkey love `b _ _ a n a _` 🍌 ",
+    "ข้อ 3: An `monkey love `b _ _ a n a ` 🍌 ",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
