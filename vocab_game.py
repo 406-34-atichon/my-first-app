@@ -104,7 +104,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: Cats love to eat สีเหลือง yellow `มะม่วง m _ _ _o`. 🥭 ",
+    "ข้อ 4:สีเหลือง yellow `มะม่วง m _ _ _o`. 🥭 ",
     value=st.session_state.ans4_val,
 )
 
@@ -129,10 +129,10 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1, ans2)
+    show_result_dialog(ans1, ans2, ans3, ans4)
 
 st.divider()
-st.write("นางสาวดีใจ ยิ้มแย้ม เลขที่ 5 ม.4/5")
+st.write("นายอธิชนม์ จันทร์ต๊ะวงค์ เลขที่ 34 ม.4/6")
 
 
 
