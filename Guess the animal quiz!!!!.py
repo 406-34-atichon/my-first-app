@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-score = 0
+st.score = 0
 st.title("⏱️ เกมทายศัพท์จับเวลา(หมวดแอนิมอล)")
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
