@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-score = 0
+
 st.title("⏱️ เกมทายศัพท์จับเวลา(หมวดแอนิมอล)")
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
@@ -46,20 +46,20 @@ def reset_game():
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
 @st.dialog("📊 สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2, ans3, ans4):
+def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10):
     st.balloons()
     score = 0
 
-    u_ans1 = ans1.strip().lower()
-    u_ans2 = ans2.strip().lower()
-    u_ans3 = ans3.strip().lower()
-    u_ans4 = ans4.strip().lower()
-    u_ans5 = ans5.strip().lower()
-    u_ans6 = ans6.strip().lower()
-    u_ans7 = ans7.strip().lower()
-    u_ans8 = ans8.strip().lower()
-    u_ans9 = ans9.strip().lower()
-    u_ans10 = ans10.strip().lower()
+u_ans1 = str(ans1 or "").strip().lower()
+u_ans2 = str(ans2 or "").strip().lower()
+u_ans3 = str(ans3 or "").strip().lower()
+u_ans4 = str(ans4 or "").strip().lower()
+u_ans5 = str(ans5 or "").strip().lower()
+u_ans6 = str(ans6 or "").strip().lower()
+u_ans7 = str(ans7 or "").strip().lower()
+u_ans8 = str(ans8 or "").strip().lower()
+u_ans9 = str(ans9 or "").strip().lower()
+u_ans10 = str(ans10 or "").strip().lower()
 
     # ตรวจข้อ 1
     if u_ans1 == "หมา" or u_ans1 == "สุนัข" or u_ans1 == "Dog" or u_ans1 == "dog":
