@@ -200,16 +200,16 @@ ans10 = st.text_input(
     
     
     # อัปเดตค่าล่าสุดเข้าตัวแปร
-    st.session_state.ans1_val = ans1
-    st.session_state.ans2_val = ans2
-    st.session_state.ans3_val = ans3
-    st.session_state.ans4_val = ans4
-    st.session_state.ans5_val = ans5
-    st.session_state.ans6_val = ans6
-    st.session_state.ans7_val = ans7
-    st.session_state.ans8_val = ans8
-    st.session_state.ans9_val = ans9
-    st.session_state.ans10_val = ans10
+st.session_state.ans1_val = ans1
+st.session_state.ans2_val = ans2
+st.session_state.ans3_val = ans3
+st.session_state.ans4_val = ans4
+st.session_state.ans5_val = ans5
+st.session_state.ans6_val = ans6
+st.session_state.ans7_val = ans7
+st.session_state.ans8_val = ans8
+st.session_state.ans9_val = ans9
+st.session_state.ans10_val = ans10
     
     
     # 4. ปุ่มส่งคำตอบ
