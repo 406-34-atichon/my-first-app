@@ -215,8 +215,8 @@ st.session_state.ans10_val = ans10
     # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
     if st.button("📥 ส่งคำตอบ"):
-    st.session_state.is_ended = True
-    st.rerun()
+            st.session_state.is_ended = True
+            st.rerun()
     
 
     
