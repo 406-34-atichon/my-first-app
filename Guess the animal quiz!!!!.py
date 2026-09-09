@@ -133,11 +133,11 @@ def show_result_dialog(ans1, ans2, ans3, ans4):
                  
 
 st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
-    if score >= 8:
+if score >= 8:
         st.success("🎉รอบรู้เรื่องสัตว์ขั้นเทพ!")
-    elif score >= 5:
+elif score >= 5:
         st.info("👍ผ่านเกณฑ์รอบรู้สัตว์ทั่วไป")
-    else:
+else:
         st.error("💀พยายามอีกนิด ไปศึกษาเรื่องสัตว์เพิ่มเติมนะ!")
 
 # ----------------------------------------------------
