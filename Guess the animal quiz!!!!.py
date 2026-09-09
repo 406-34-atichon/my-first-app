@@ -157,43 +157,43 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
 st.divider()
     
     # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
-ans1 = st.text_input(
+    ans1 = st.text_input(
         "ข้อ 1:  สัตว์อะไรเอ่ย ร้อง โฮ่งๆ ชอบเห่า เฝ้าบ้าน เป็นเพื่อนซี้มนุษย์?",
         value=st.session_state.ans1_val,
     )
-ans2 = st.text_input(
+    ans2 = st.text_input(
         "ข้อ 2: สัตว์อะไรเอ่ย ร้อง เหมียวๆ ชอบจับหนู แถมชอบนอนทั้งวัน?",
         value=st.session_state.ans2_val,
     )
-ans3 = st.text_input(
+    ans3 = st.text_input(
         "ข้อ 3:สัตว์อะไรเอ่ย ตัวใหญ่ที่สุดบนบก มีงวงยาวๆ และมีงาขาวๆ?",
         value=st.session_state.ans3_val,
     )
-ans4 = st.text_input(
+    ans4 = st.text_input(
         "ข้อ 4: สัตว์อะไรเอ่ย ชอบกินกล้วย ซุกซน โหนกิ่งไม้ไปมา ร้อง เจี๊ยกๆ? ",
         value=st.session_state.ans4_val,
     )
-ans5 = st.text_input(
+    ans5 = st.text_input(
         "ข้อ 5:สัตว์อะไรเอ่ย มี 2 ขา เดินเตาะแตะ ร้อง ก๊าบๆ ชอบว่ายน้ำ?",
         value=st.session_state.ans5_val,
     )
-ans6 = st.text_input(
+    ans6 = st.text_input(
         "ข้อ 6: สัตว์อะไรเอ่ย มีปีก บินได้บนท้องฟ้า ร้อง จิ๊บๆ?",
         value=st.session_state.ans6_val,
     )
-ans7 = st.text_input(
+    ans7 = st.text_input(
         "ข้อ 7:สัตว์อะไรเอ่ย ตัวใหญ่ ร้อง มอๆ ให้นมสดอร่อยๆ ให้เราดื่ม?",
         value=st.session_state.ans7_val,
     )
-ans8 = st.text_input(
+    ans8 = st.text_input(
         "ข้อ 8:สัตว์อะไรเอ่ย หูยาว ขนปุกปุย กระโดดดุ๊กดิ๊ก ชอบกินแครอท?",
         value=st.session_state.ans8_val,
     )
-ans9 = st.text_input(
+    ans9 = st.text_input(
         "ข้อ 9: สัตว์อะไรเอ่ย เป็นสัตว์ตัวแทนแห่งอเมริกา เป็นนก ชื่ออยู่ในทะเล?",
         value=st.session_state.ans9_val,
     )
-ans10 = st.text_input(
+    ans10 = st.text_input(
         "ข้อ 10:สัตว์อะไรเอ่ยเนื้อสีส้ม นอเวย์มีเยอะ ฮาแลนด์ ว่ายทวนน้ำ โดนดองเกาหลีอร่อยๆ?",
         value=st.session_state.ans10_val,
     )
@@ -215,11 +215,10 @@ st.session_state.ans10_val = ans10
     # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
     if st.button("📥 ส่งคำตอบ"):
-            st.session_state.is_ended = True
-            st.rerun()
+    st.session_state.is_ended = True
+    st.rerun()
     
-     time.sleep(1)
-     st.rerun()
+
     
     # 5. แสดง Dialog ผลลัพธ์
     if st.session_state.get("is_ended", False):
