@@ -61,74 +61,74 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     u_ans9 = str(ans9 or "").strip().lower()
     u_ans10 = str(ans10 or "").strip().lower()    
     # ตรวจข้อ 1
-if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
-    st.success("✅ ข้อ 1: ถูกต้อง")        
+    if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
+        st.success("✅ ข้อ 1: ถูกต้อง")        
     score += 1
-else:    
-    st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")        
+    else:    
+        st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")        
 
     # ตรวจข้อ 2
-if u_ans2 == "แมว" or u_ans2 == "cat":    
+    if u_ans2 == "แมว" or u_ans2 == "cat":    
         st.success("✅ ข้อ 2: ถูกต้อง")        
         score += 1
-else:    
+    else:    
      st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")        
                  
           # ตรวจข้อ 3
-if u_ans3 == "ช้าง" or u_ans3 == "elephant":    
-     st.success("✅ ข้อ 3: ถูกต้อง")        
-     score += 1
-else:    
-    st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")        
+    if u_ans3 == "ช้าง" or u_ans3 == "elephant":    
+         st.success("✅ ข้อ 3: ถูกต้อง")        
+         score += 1
+    else:    
+        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")        
 
     # ตรวจข้อ 4
-if u_ans4 in ["ลิง", "monkey"]:    
-    st.success("✅ ข้อ 4: ถูกต้อง")        
-    score += 1
-else:    
-    st.error(f"❌ ข้อ 4 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")        
+    if u_ans4 in ["ลิง", "monkey"]:    
+        st.success("✅ ข้อ 4: ถูกต้อง")        
+        score += 1
+    else:    
+        st.error(f"❌ ข้อ 4 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")        
 
     # ตรวจข้อ 5
-if u_ans5 in ["เป็ด", "duck"]:    
-     st.success("✅ ข้อ 5: ถูกต้อง")        
-     score += 1
-else:
-     st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")    
-
-    # ตรวจข้อ 6
-if u_ans6 in ["bird","นก"]:    
-    st.success("✅ ข้อ 6: ถูกต้อง")        
-    score += 1
-else:    
-     st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")        
-                 
-    # ตรวจข้อ 7
-if u_ans7 in ["Cow", "วัว", "วัวนม"]:    
-    st.success("✅ ข้อ 7: ถูกต้อง")        
-    score += 1
-else:    
-    st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans7}')")        
-
-    # ตรวจข้อ 8
-if u_ans8 in ["กระต่าย", "Rabbit"]:    
-    st.success("✅ ข้อ 8: ถูกต้อง")        
-    score += 1
-else:    
-    st.error(f"❌ ข้อ 8 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans8}')")    
-
-    # ตรวจข้อ 9
-if u_ans9 in ["นกอินทรีย์", "อินทรีย์", "eagle"]:    
-    st.success("✅ ข้อ 9: ถูกต้อง")        
-    score += 1
-else:        
-    st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans9}')")        
-
-    # ตรวจข้อ 10
-if u_ans10 in ["salmon", "ปลาแซลม่อน", "แซลม่อน"]:
-    st.success("✅ ข้อ 10: ถูกต้อง")
-    score += 1
-else:    
-    st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")        
+    if u_ans5 in ["เป็ด", "duck"]:    
+         st.success("✅ ข้อ 5: ถูกต้อง")        
+         score += 1
+    else:
+         st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")    
+    
+        # ตรวจข้อ 6
+    if u_ans6 in ["bird","นก"]:    
+        st.success("✅ ข้อ 6: ถูกต้อง")        
+        score += 1
+    else:    
+         st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")        
+                     
+        # ตรวจข้อ 7
+    if u_ans7 in ["Cow", "วัว", "วัวนม"]:    
+        st.success("✅ ข้อ 7: ถูกต้อง")        
+        score += 1
+    else:    
+        st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans7}')")        
+    
+        # ตรวจข้อ 8
+    if u_ans8 in ["กระต่าย", "Rabbit"]:    
+        st.success("✅ ข้อ 8: ถูกต้อง")        
+        score += 1
+    else:    
+        st.error(f"❌ ข้อ 8 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans8}')")    
+    
+        # ตรวจข้อ 9
+    if u_ans9 in ["นกอินทรีย์", "อินทรีย์", "eagle"]:    
+        st.success("✅ ข้อ 9: ถูกต้อง")        
+        score += 1
+    else:        
+        st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans9}')")        
+    
+        # ตรวจข้อ 10
+    if u_ans10 in ["salmon", "ปลาแซลม่อน", "แซลม่อน"]:
+        st.success("✅ ข้อ 10: ถูกต้อง")
+        score += 1
+    else:    
+        st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")        
                  
 
 st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
