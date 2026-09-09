@@ -61,7 +61,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     u_ans9 = str(ans9 or "").strip().lower()
     u_ans10 = str(ans10 or "").strip().lower()    
     # ตรวจข้อ 1
-    if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
+    if u_ans1 == "หมา" or u_ans1 == "สุนัข":
         st.success("✅ ข้อ 1: ถูกต้อง")        
         score += 1
     else:    
@@ -131,13 +131,13 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")        
                  
 
-st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
-if score >= 8:
-    st.success("🎉 รอบรู้เรื่องสัตว์ขั้นเทพ!")
-elif score >= 5:
-    st.info("👍 ผ่านเกณฑ์รอบรู้สัตว์ทั่วไป")
-else:
-    st.error("💀 พยายามอีกนิด ไปศึกษาเรื่องสัตว์เพิ่มเติมนะ!")
+        st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
+        if score >= 8:
+            st.success("🎉 รอบรู้เรื่องสัตว์ขั้นเทพ!")
+        elif score >= 5:
+            st.info("👍 ผ่านเกณฑ์รอบรู้สัตว์ทั่วไป")
+        else:
+            st.error("💀 พยายามอีกนิด ไปศึกษาเรื่องสัตว์เพิ่มเติมนะ!")
     
     # ----------------------------------------------------
     # 1. ปุ่มเริ่มเล่นเกม
