@@ -60,9 +60,8 @@ u_ans7 = str(ans7 or "").strip().lower()
 u_ans8 = str(ans8 or "").strip().lower()
 u_ans9 = str(ans9 or "").strip().lower()
 u_ans10 = str(ans10 or "").strip().lower()    
-
     # ตรวจข้อ 1
- if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
+if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
     st.success("✅ ข้อ 1: ถูกต้อง")        
      score += 1        
  else:    
