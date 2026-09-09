@@ -63,7 +63,7 @@ u_ans10 = str(ans10 or "").strip().lower()
     # ตรวจข้อ 1
 if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
     st.success("✅ ข้อ 1: ถูกต้อง")        
-     score += 1        
+    score += 1        
  else:    
         st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")        
 
