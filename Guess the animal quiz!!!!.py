@@ -142,17 +142,17 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     # ----------------------------------------------------
     # 1. ปุ่มเริ่มเล่นเกม
     # ----------------------------------------------------
-    st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
-    
-    # 2. แถบแสดงเวลานับถอยหลัง
-    if "start" in st.session_state and not st.session_state.get("is_ended", False):
-        time_left = int(45 - (time.time() - st.session_state.start))
-    
-        if time_left > 0:
-            st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
-        else:
-            st.session_state.is_ended = True
-            st.rerun()
+st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
+
+# 2. แถบแสดงเวลานับถอยหลัง
+if "start" in st.session_state and not st.session_state.get("is_ended", False):
+    time_left = int(45 - (time.time() - st.session_state.start))
+
+    if time_left > 0:
+        st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
+    else:
+        st.session_state.is_ended = True
+        st.rerun()
     
 st.divider()
     
