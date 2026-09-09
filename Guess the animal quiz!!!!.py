@@ -128,17 +128,15 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.success("✅ ข้อ 10: ถูกต้อง")
         score += 1
     else:    
-        st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")        
-                 
+        st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")
+    st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
+    if score >= 8:
+        st.success("🎉 รอบรู้เรื่องสัตว์ขั้นเทพ!")
+    elif score >= 5:
+        st.info("👍 ผ่านเกณฑ์รอบรู้สัตว์ทั่วไป")
+    else:
+        st.error("💀 พยายามอีกนิด ไปศึกษาเรื่องสัตว์เพิ่มเติมนะ!")
 
-        st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
-        if score >= 8:
-            st.success("🎉 รอบรู้เรื่องสัตว์ขั้นเทพ!")
-        elif score >= 5:
-            st.info("👍 ผ่านเกณฑ์รอบรู้สัตว์ทั่วไป")
-        else:
-            st.error("💀 พยายามอีกนิด ไปศึกษาเรื่องสัตว์เพิ่มเติมนะ!")
-    
     # ----------------------------------------------------
     # 1. ปุ่มเริ่มเล่นเกม
     # ----------------------------------------------------
@@ -214,15 +212,14 @@ st.session_state.ans10_val = ans10
     
     # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    if st.button("📥 ส่งคำตอบ"):
-            st.session_state.is_ended = True
-            st.rerun()
-    
+    if st.button("🗳️ ส่งคำตอบ"):
+        st.session_state.is_ended = True
+        st.rerun()
 
     
     # 5. แสดง Dialog ผลลัพธ์
-    if st.session_state.get("is_ended", False):
-        show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10)
+  if st.session_state.get("is_ended", False):
+    show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10)
 
 st.divider()
 st.write("นายอธิชนม์ จันทร์ต๊ะวงค์ เลขที่ 34 ม.4/6")
