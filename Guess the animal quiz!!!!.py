@@ -50,16 +50,16 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     st.balloons()
     score = 0
 
-u_ans1 = str(ans1 or "").strip().lower()
-u_ans2 = str(ans2 or "").strip().lower()
-u_ans3 = str(ans3 or "").strip().lower()
-u_ans4 = str(ans4 or "").strip().lower()
-u_ans5 = str(ans5 or "").strip().lower()
-u_ans6 = str(ans6 or "").strip().lower()
-u_ans7 = str(ans7 or "").strip().lower()
-u_ans8 = str(ans8 or "").strip().lower()
-u_ans9 = str(ans9 or "").strip().lower()
-u_ans10 = str(ans10 or "").strip().lower()    
+    u_ans1 = str(ans1 or "").strip().lower()
+    u_ans2 = str(ans2 or "").strip().lower()
+    u_ans3 = str(ans3 or "").strip().lower()
+    u_ans4 = str(ans4 or "").strip().lower()
+    u_ans5 = str(ans5 or "").strip().lower()
+    u_ans6 = str(ans6 or "").strip().lower()
+    u_ans7 = str(ans7 or "").strip().lower()
+    u_ans8 = str(ans8 or "").strip().lower()
+    u_ans9 = str(ans9 or "").strip().lower()
+    u_ans10 = str(ans10 or "").strip().lower()    
     # ตรวจข้อ 1
 if u_ans1 == "หมา" or u_ans1 == "สุนัข":    
     st.success("✅ ข้อ 1: ถูกต้อง")        
