@@ -227,4 +227,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 st.divider()
 st.write("นายอธิชนม์ จันทร์ต๊ะวงค์ เลขที่ 34 ม.4/6")
 
+if st.button("🔄 เริ่มเกมใหม่ / Reset"):
+    st.session_state.clear()
+    st.rerun()
 
