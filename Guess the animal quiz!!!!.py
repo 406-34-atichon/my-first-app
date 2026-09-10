@@ -117,7 +117,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.error(f"❌ ข้อ 8 : ยังไม่ถูกต้อง (คุณตอบ '{u_ans8}')")    
     
         # ตรวจข้อ 9
-    if u_ans9 in ["นกอินทรีย์", "อินทรีย์", "eagle"]:    
+    if u_ans9 in ["นกอินทรี", "อินทรี", "eagle"]:    
         st.success("✅ ข้อ 9: ถูกต้อง")        
         score += 1
     else:        
@@ -155,42 +155,52 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 st.divider()
     
     # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
+st.image("https://tse2.mm.bing.net/th/id/OIP.y4Qd20izWDCilKiPkmOxNwHaFz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", width=300)
 ans1 = st.text_input(
     "ข้อ 1:  สัตว์อะไรเอ่ย ร้อง โฮ่งๆ ชอบเห่า เฝ้าบ้าน เป็นเพื่อนซี้มนุษย์?",
     value=st.session_state.ans1_val,
 )
+st.image("https://dinoanimals.com/wp-content/uploads/2023/03/Domestic-cat-19.jpg", width=300)
 ans2 = st.text_input(
     "ข้อ 2: สัตว์อะไรเอ่ย ร้อง เหมียวๆ ชอบจับหนู แถมชอบนอนทั้งวัน?",
     value=st.session_state.ans2_val,
 )
+st.image("https://tse2.mm.bing.net/th/id/OIP.LLA12kAZwvE_nIycIygbCgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", width=300)
 ans3 = st.text_input(
     "ข้อ 3:สัตว์อะไรเอ่ย ตัวใหญ่ที่สุดบนบก มีงวงยาวๆ และมีงาขาวๆ?",
     value=st.session_state.ans3_val,
 )
+st.image("https://cdn.pixabay.com/photo/2024/01/31/11/07/monkey-8543906_1280.jpg", width=300)
 ans4 = st.text_input(
     "ข้อ 4: สัตว์อะไรเอ่ย ชอบกินกล้วย ซุกซน โหนกิ่งไม้ไปมา ร้อง เจี๊ยกๆ? ",
     value=st.session_state.ans4_val,
 )
+st.image("https://cdn.pixabay.com/photo/2023/11/10/20/32/duck-8380065_1280.jpg", width=300)
 ans5 = st.text_input(
     "ข้อ 5:สัตว์อะไรเอ่ย มี 2 ขา เดินเตาะแตะ ร้อง ก๊าบๆ ชอบว่ายน้ำ?",
     value=st.session_state.ans5_val,
 )
+st.image("https://www.postposmo.com/wp-content/uploads/2020/06/tipos-de-aves-50-1024x539.jpg", width=300)
 ans6 = st.text_input(
     "ข้อ 6: สัตว์อะไรเอ่ย มีปีก บินได้บนท้องฟ้า ร้อง จิ๊บๆ?",
     value=st.session_state.ans6_val,
 )
+st.image("https://png.pngtree.com/background/20240429/original/pngtree-image-of-brown-cow-on-nature-background-rural-farm-stare-photo-picture-image_8726568.jpg", width=300)
 ans7 = st.text_input(
     "ข้อ 7:สัตว์อะไรเอ่ย ตัวใหญ่ ร้อง มอๆ ให้นมสดอร่อยๆ ให้เราดื่ม?",
     value=st.session_state.ans7_val,
 )
+st.image("https://animal2you.com/wp-content/uploads/2024/03/%E0%B8%9E%E0%B8%A4%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%A2-1024x761.jpg", width=300)
 ans8 = st.text_input(
     "ข้อ 8:สัตว์อะไรเอ่ย หูยาว ขนปุกปุย กระโดดดุ๊กดิ๊ก ชอบกินแครอท?",
     value=st.session_state.ans8_val,
 )
+st.image("https://cms.kapook.com/uploads/tag/20/ID_19787_58d490d9d658c.jpg", width=300)
 ans9 = st.text_input(
     "ข้อ 9: สัตว์อะไรเอ่ย เป็นสัตว์ตัวแทนแห่งอเมริกา เป็นนก ชื่ออยู่ในทะเล?",
     value=st.session_state.ans9_val,
 )
+st.image("https://tse2.mm.bing.net/th/id/OIP.Gh54AsHi0CLuvP5i8GqS4gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", width=300)
 ans10 = st.text_input(
     "ข้อ 10:สัตว์อะไรเอ่ยเนื้อสีส้ม นอเวย์มีเยอะ ฮาแลนด์ ว่ายทวนน้ำ โดนดองเกาหลีอร่อยๆ?",
     value=st.session_state.ans10_val,
@@ -222,7 +232,7 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10)
 
 st.divider()
-st.write("นายอธิชนม์ จันทร์ต๊ะวงค์ เลขที่ 34 ม.4/6")
+st.write("ทายศัพท์แอนิมอล")
 
 if st.button("🔄 เริ่มเกมใหม่ / Reset"):
     st.session_state.clear()
