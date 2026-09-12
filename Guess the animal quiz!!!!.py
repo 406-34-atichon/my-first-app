@@ -141,7 +141,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     # 1. ปุ่มเริ่มเล่นเกม
     # ----------------------------------------------------
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
-If "start" in st.session_state and not st.session_state.get("is_ended", False):
+if "start" in st.session_state and not st.session_state.get("is_ended", False):
     t = int(90 - (time.time() - st.session_state.start))
     st.error(f"⏳ เหลือเวลา: {max(0, t)} วินาที")
     if t > 0: time.sleep(1); st.rerun()
