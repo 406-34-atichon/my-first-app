@@ -145,7 +145,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 # 2. แถบแสดงเวลานับถอยหลัง
 @st_fragment
 def show_timer():
-if "start" in st.session_state and not st.session_state.get("is_ended", False):
+    if "start" in st.session_state and not st.session_state.get("is_ended", False):
     time_left = int(90 - (time.time() - st.session_state.start))
 
     if time_left > 0:
