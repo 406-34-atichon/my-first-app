@@ -146,16 +146,6 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     st.error(f"⏳ เหลือเวลา: {max(0, t)} วินาที")
     if t > 0: time.sleep(1); st.rerun()
 # 2. แถบแสดงเวลานับถอยหลัง
-    if "start" in st.session_state and not st.session_state.get("is_ended", False):
-        time_left = int(90 - (time.time() - st.session_state.start))
-
-        if time_left > 0:
-            st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
-            time.sleep(1)
-            st.rerun()
-        else:
-            st.session_state.is_ended = True
-            st.rerun()
     
 st.divider()
     
