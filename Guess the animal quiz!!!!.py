@@ -149,12 +149,12 @@ def show_timer():
         time_left = int(90 - (time.time() - st.session_state.start))
 
         if time_left > 0:
-        st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
-        time.sleep(1)
-        st.rerun()
+            st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
+            time.sleep(1)
+            st.rerun()
         else:
-        st.session_state.is_ended = True
-        st.rerun()
+            st.session_state.is_ended = True
+            st.rerun()
     
 st.divider()
     
