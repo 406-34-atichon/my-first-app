@@ -149,7 +149,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
         time.sleep(1)
-        st.rerun
+        st.rerun()
     else:
         st.session_state.is_ended = True
         st.rerun()
