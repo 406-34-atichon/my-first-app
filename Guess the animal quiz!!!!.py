@@ -1,5 +1,6 @@
 import time
 import streamlit as st
+from streamlit_autorefresh import st_autorefresh⁠
 
 st.title("⏱️ เกมตอบปัญหาสัตว์จับเวลา")
 
@@ -144,6 +145,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
+    st_autorefresh(interval=1000, key="gametimer")
     time_left = int(90 - (time.time() - st.session_state.start))
 
     if time_left > 0:
