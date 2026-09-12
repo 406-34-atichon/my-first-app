@@ -204,7 +204,7 @@ ans9 = st.text_input(
 )
 st.image("https://tse2.mm.bing.net/th/id/OIP.Gh54AsHi0CLuvP5i8GqS4gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", width=300)
 ans10 = st.text_input(
-    "ข้อ 10:สัตว์อะไรเอ่ยเนื้อสีส้ม นอเวย์มีเยอะ ฮาแลนด์ ว่ายทวนน้ำ โดนดองเกาหลีอร่อยๆ?",
+    "ข้อ 10:สัตว์อะไรเอ่ยปลาเนื้อสีส้ม นอเวย์มีเยอะ ว่ายทวนน้ำเพื่อวางไข่?",
     value=st.session_state.ans10_val,
 )
     
